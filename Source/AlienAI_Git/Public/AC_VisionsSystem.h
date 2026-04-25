@@ -62,4 +62,6 @@ public:
 	// Función para que el Evaluator pueda consultar la detección
 	UFUNCTION(BlueprintCallable, Category = "Alien | Vision")
 	float GetDetectionValue() const { return CurrentDetection; }
+
+
 };

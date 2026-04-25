@@ -21,7 +21,7 @@ AAlienDirector::AAlienDirector()
 	HintInterval = 25.0f;
 	HintRadius = 1000.0f;
 	HintBannedRadius = 200.0f;
-	HintStartDelay = 5.0f;
+	HintStartDelay = 20.0f;
 
 	FlashlightNoiseInterval = 0.5f; // Enviar pista cada medio segundo es suficiente
 	LastFlashlightNoiseTime = 0.0f;
@@ -284,9 +284,4 @@ void AAlienDirector::ClearHintTimer()
 		GetWorldTimerManager().ClearTimer(HintTimeoutTimerHandle);
 		UE_LOG(LogTemp, Log, TEXT("Director: Pista completada. Timer cancelado."));
 	}
-}
-
-float AAlienDirector::GetTension()
-{
-	return fCurrentTension;
 }

@@ -43,7 +43,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Director | Hints")
 	void ClearHintTimer();
 
-	float GetTension();
+	UFUNCTION(BlueprintCallable, Category = "Director | Hints")
+	float GetTension() const { return fCurrentTension; }
 
 protected:
 	// Called when the game starts or when spawned
